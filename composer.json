@@ -1,0 +1,23 @@
+{
+    "name": "cloudware-studio/blog",
+    "type": "library",
+    "description": "Laravel Blog with adminLTE",
+    "homepage": "http://www.cloudware-studio.com",
+    "license": "MIT",
+    "keywords": ["laravel", "demo", "blog", "AdminLTE", "admin", "free"],
+    "authors": [
+        {
+            "name": "miky",
+            "email": "miguelangel@cloudware-studio.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Cloudware\\Blog\\": "vendor/cloudware-studio/blog/src"
+        }
+    },
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
