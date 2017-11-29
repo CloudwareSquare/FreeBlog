@@ -3,40 +3,38 @@ Free Blog with AdminLTE administration panel easy integrated with laravel
 
 Manual de instalación:
 
-1- Instalación de laravel:
+1- Download composer:
 
-	composer create-project --prefer-dist laravel/laravel [nombre_proyecto]
 
-2- Instalación del middleware auth:
+2- Install Laravel 5.5:
 
-	php artisan make:auth
+	composer create-project --prefer-dist laravel/laravel [project_name] 5.5
 
-3- Descarga del paquete de cloudware-studio
+3- Add this repo to your composer.json
 
-	composer require cloudware-studio/blog:dev-master 
+    cloudware-square/free-blog:dev-master
 
-probar si no funciona con :dev-stable
-
-4- Modificar archivo composer.json
+4- Modify your composer.json
 
 	 "psr-4": {
 		"App\\": "app/",
-	    	"Cloudware\\Blog\\": "vendor/cloudware-studio/blog/src"
+	    	"Cloudware\\Blog\\": "vendor/cloudware-square/blog/src"
 		}
 
-ejecutar tras modificar el composer.json:
+and update composer
 
-	composer dump-autoload y composer update.
+	composer dump-autoload
+	composer update
 
-5- Añadir el provider en el array de providers en config/app.php
+5- Add de Service Provider in your config/app.php
 
-    Cloudware\Blog\CloudwareStudioBlogServiceProvider::class,
+    Cloudware\Blog\CloudwareStudioBlogServiceProvider::class
 
-6- Publicar los archivos del vendor
+6- Publish this vendor
 
 	php artisan vendor:publish
 
-7- Migración de la bd:
+7- Run Migrations
 
 	php artisan migrate
 
@@ -44,7 +42,6 @@ ejecutar tras modificar el composer.json:
 
 	/admin
 
-*los modelos, las rutas y los controladores no es necesario crearlos, ya están en el componente, lo que si es necesario tener instalado el middleware auth ya que algunas de las rutas internas del componente requieren estar autenticado en la app.
+* You need the Laravel default middleware auth.
 
-# Por favor, visitenos en www.cloudware-studio.com
-# Enjoy!! :)
+# Visit us in: www.cloudware-square.com
