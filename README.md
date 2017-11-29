@@ -1,4 +1,4 @@
-# Blog
+# Laravel Free Blog
 Free Blog with AdminLTE administration panel easy integrated with laravel
 
 Manual de instalación:
