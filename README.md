@@ -18,7 +18,7 @@ Manual de instalación:
 
 	 "psr-4": {
 		"App\\": "app/",
-    	"Cloudware\\Blog\\": "vendor/cloudware-square/blog/src"
+        "Cloudware\\Blog\\": "vendor/cloudware-square/free-blog/src"
 		}
 
 and update composer
