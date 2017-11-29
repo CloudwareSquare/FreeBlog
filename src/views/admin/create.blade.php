@@ -33,8 +33,8 @@
             <!-- /.box-header -->
             <div class="box-body">
                 <div class="panel-body">
-                    <br />
-                    <br />
+                    <br/>
+                    <br/>
                     @if ($errors->any())
                         <ul class="alert alert-danger">
                             @foreach ($errors->all() as $error)

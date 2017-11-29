@@ -38,9 +38,14 @@ and update composer
 
 	php artisan migrate
 
-8- Añadir en cualquier parte de la app un enlace a la ruta principal (en un botón por ejemplo) para acceder al componente
+8- Access your blog:
 
-	/admin
+    www.yourdomain.com/blog
+
+
+9- Click access and register your user. Change Auth middleware to disable User registration.
+
+
 
 * You need the Laravel default middleware auth.
 
