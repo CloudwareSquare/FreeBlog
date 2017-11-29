@@ -28,7 +28,7 @@ and update composer
 
 5- Add de Service Provider in your config/app.php
 
-    Cloudware\Blog\CloudwareStudioBlogServiceProvider::class
+    Cloudware\Blog\CloudwareSquareBlogServiceProvider::class
 
 6- Publish this vendor
 
