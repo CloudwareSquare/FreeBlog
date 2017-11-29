@@ -2,7 +2,7 @@
     "name": "cloudware-square/free-blog",
     "type": "library",
     "description": "Laravel Blog with adminLTE",
-    "homepage": "http://www.cloudware-studio.com",
+    "homepage": "http://www.cloudware-square.com",
     "license": "MIT",
     "keywords": ["laravel", "blog", "AdminLTE", "admin", "free"],
     "authors": [

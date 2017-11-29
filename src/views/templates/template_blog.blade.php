@@ -3,14 +3,14 @@
     <!--[if IE 9]> <html lang="es" class="ie9"> <![endif]-->
     <!--[if !IE]><!--> <html lang="es"> <!--<![endif]-->
     <head>
-        @include('vendor.cloudware-studio.blog.templates.template_blog_header')
-        @include('vendor.cloudware-studio.blog.templates.template_blog_css')
+        @include('vendor.cloudware-square.blog.templates.template_blog_header')
+        @include('vendor.cloudware-square.blog.templates.template_blog_css')
     </head>
     <body class="@yield('body-class')">
-        @include('vendor.cloudware-studio.blog.header')
+        @include('vendor.cloudware-square.blog.header')
         @yield('content')
-        @include('vendor.cloudware-studio.blog.footer')
-        @include('vendor.cloudware-studio.blog.templates.template_blog_js')
+        @include('vendor.cloudware-square.blog.footer')
+        @include('vendor.cloudware-square.blog.templates.template_blog_js')
         @stack('script')
     </body>
 

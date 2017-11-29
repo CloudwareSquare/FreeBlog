@@ -1,4 +1,4 @@
-@extends('vendor.cloudware-studio.blog.admin.layouts.app')
+@extends('vendor.cloudware-square.blog.admin.layouts.app')
 
 @section('content')
     <section class="content-header">
@@ -46,7 +46,7 @@
                     <form method="POST" action="{{ url('blog/admin/posts') }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
                         {{ csrf_field() }}
 
-                        @include ('vendor.cloudware-studio.blog.admin.form')
+                        @include ('vendor.cloudware-square.blog.admin.form')
 
                     </form>
                 </div>

@@ -6,7 +6,7 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="{{ url('vendor/cloudware-studio/img/logo/iso_white.png') }}" class="img"
+                <img src="{{ url('vendor/cloudware-square/img/logo/iso_white.png') }}" class="img"
                      alt="User Image"/>
             </div>
             <div class="pull-left info">
@@ -33,7 +33,7 @@
         <!-- Sidebar Menu -->
 
         <ul class="sidebar-menu">
-            @include('vendor.cloudware-studio.blog.admin.layouts.menu')
+            @include('vendor.cloudware-square.blog.admin.layouts.menu')
         </ul>
         <!-- /.sidebar-menu -->
     </section>

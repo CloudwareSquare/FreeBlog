@@ -1,4 +1,4 @@
-@extends('vendor.cloudware-studio.blog.admin.layouts.app')
+@extends('vendor.cloudware-square.blog.admin.layouts.app')
 
 @section('content')
     <section class="content-header">

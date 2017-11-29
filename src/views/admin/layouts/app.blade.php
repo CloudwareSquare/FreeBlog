@@ -30,7 +30,7 @@
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini"><b>C</b>W</span>
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg"><img src="{{ url('vendor/cloudware-studio/img/logo/iso_white.png') }}" class="" alt="User Image" style="height: 15%;width: 15%; margin-bottom: 3%;"><b> Cloud</b>WARE Blog</span>
+                <span class="logo-lg"><img src="{{ url('vendor/cloudware-square/img/logo/iso_white.png') }}" class="" alt="User Image" style="height: 15%;width: 15%; margin-bottom: 3%;"><b> Cloud</b>WARE Blog</span>
             </a>
 
             <!-- Header Navbar -->
@@ -47,7 +47,7 @@
                             <!-- Menu Toggle Button -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <!-- The user image in the navbar-->
-                                <img src="{{ url('vendor/cloudware-studio/img/user.jpg') }}"
+                                <img src="{{ url('vendor/cloudware-square/img/user.jpg') }}"
                                      class="user-image" alt="User Image"/>
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                                 <span class="hidden-xs">{!! Auth::user()->name !!}</span>
@@ -55,7 +55,7 @@
                             <ul class="dropdown-menu">
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
-                                    <img src="{{ url('vendor/cloudware-studio/img/user.jpg') }}"
+                                    <img src="{{ url('vendor/cloudware-square/img/user.jpg') }}"
                                          class="img-circle" alt="User Image"/>
                                     <p>
                                         {!! Auth::user()->name !!}
@@ -82,7 +82,7 @@
         </header>
 
         <!-- Left side column. contains the logo and sidebar -->
-        @include('vendor.cloudware-studio.blog.admin.layouts.sidebar')
+        @include('vendor.cloudware-square.blog.admin.layouts.sidebar')
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             @yield('content')
@@ -90,7 +90,7 @@
 
         <!-- Main Footer -->
         <footer class="main-footer" style="max-height: 100px;text-align: center">
-            <strong>Copyright © 2017 <a href="http://www.cloudware-studio.com" target="_blank">Cloudware Studio</a>.</strong> All rights reserved.
+            <strong>Copyright © 2017 <a href="http://www.cloudware-square.com" target="_blank">Cloudware Studio</a>.</strong> All rights reserved.
         </footer>
 
     </div>
