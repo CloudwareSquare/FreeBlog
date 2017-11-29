@@ -4,7 +4,7 @@ namespace Cloudware\Blog;
 
 use Illuminate\Support\ServiceProvider;
 
-class CloudwareStudioBlogServiceProvider extends ServiceProvider
+class CloudwareSquareBlogServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -14,11 +14,11 @@ class CloudwareStudioBlogServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/views' => base_path('resources/views/vendor/cloudware-studio/blog'),
+            __DIR__ . '/views' => base_path('resources/views/vendor/cloudware-square/blog'),
         ], 'views');
 
         $this->publishes([
-            __DIR__.'/public' => public_path('vendor/cloudware-studio'),
+            __DIR__.'/public' => public_path('vendor/cloudware-square'),
         ], 'public');
 
         $this->publishes([
@@ -35,7 +35,7 @@ class CloudwareStudioBlogServiceProvider extends ServiceProvider
     {
         include __DIR__ . '/http/routes.php';
 
-        $this->loadViewsFrom(base_path('resources/views/vendor/cloudware-studio/blog'), 'blog');
-        $this->loadViewsFrom(base_path('resources/views/vendor/cloudware-studio/blog/admin'), 'blogAdmin');
+        $this->loadViewsFrom(base_path('resources/views/vendor/cloudware-square/blog'), 'blog');
+        $this->loadViewsFrom(base_path('resources/views/vendor/cloudware-square/blog/admin'), 'blogAdmin');
     }
 }

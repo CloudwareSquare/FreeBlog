@@ -3,7 +3,7 @@ Free Blog with AdminLTE administration panel easy integrated with laravel
 
 Manual de instalación:
 
-1- Download composer:
+1- Download composer
 
 
 2- Install Laravel 5.5:
@@ -18,7 +18,7 @@ Manual de instalación:
 
 	 "psr-4": {
 		"App\\": "app/",
-	    	"Cloudware\\Blog\\": "vendor/cloudware-square/blog/src"
+    	"Cloudware\\Blog\\": "vendor/cloudware-square/blog/src"
 		}
 
 and update composer
