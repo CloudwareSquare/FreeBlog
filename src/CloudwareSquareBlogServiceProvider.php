@@ -34,9 +34,8 @@ class CloudwareSquareBlogServiceProvider extends ServiceProvider
     public function register()
     {
         include __DIR__ . '/http/routes.php';
-
-        $this->loadViewsFrom(base_path('resources/views/vendor/cloudware-square/blog'), 'blog');
-        $this->loadViewsFrom(base_path('resources/views/vendor/cloudware-square/blog/admin'), 'blogAdmin');
+    
+        $this->loadViewsFrom(__DIR__.'views', 'blog');
         
     }
 }

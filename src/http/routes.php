@@ -13,7 +13,7 @@ Route::group(['middleware' => 'web', 'namespace' => 'CloudwareSquare\\Blog'], fu
 	Route::get('blog/admin/posts/{post}/edit', 'BlogController@edit')->name('blog.admin.posts.edit');
 	Route::post('blog/admin/posts/{post}', 'BlogController@update')->name('blog.admin.posts.update');
 	*/
-	Route::resource('blog/admin/posts', 'BlogController');
+	Route::resource('blog/admin/posts', 'PostsController');
 
 	Route::resource('blog/admin/categories', 'CategoriesController');
 });
