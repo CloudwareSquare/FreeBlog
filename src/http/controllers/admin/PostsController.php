@@ -7,7 +7,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
-class BlogController extends Controller
+class PostsController extends Controller
 {
     public function __construct()
     {
