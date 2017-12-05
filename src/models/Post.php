@@ -1,6 +1,6 @@
 <?php
 
-namespace Cloudware\Blog;
+namespace CloudwareSquare\Blog;
 
 use Illuminate\Database\Eloquent\Model;
 

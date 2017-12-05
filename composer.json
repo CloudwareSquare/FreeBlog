@@ -4,7 +4,7 @@
     "description": "Laravel Blog with adminLTE",
     "homepage": "http://www.cloudware-square.com",
     "license": "MIT",
-    "keywords": ["laravel", "blog", "AdminLTE", "admin", "free"],
+    "keywords": ["laravel", "blog", "AdminLTE", "admin", "free", "posts"],
     "authors": [
         {
             "name": "CloudwareSquare",
@@ -14,7 +14,14 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Cloudware\\Blog\\": "vendor/cloudwareSquare/blog/src"
+            "CloudwareSquare\\Blog\\": "vendor/cloudwareSquare/free-blog/src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CloudwareSquare\\Blog\\CloudwareSquareBlogServiceProvider"
+            ]
         }
     },
     "require": {

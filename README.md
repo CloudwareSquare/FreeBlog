@@ -1,4 +1,4 @@
-# Laravel Free Blog
+# Blog
 Free Blog with AdminLTE administration panel easy integrated with laravel
 
 Manual de instalación:
@@ -38,16 +38,9 @@ and update composer
 
 	php artisan migrate
 
-8- Make Auth Files
+8- Añadir en cualquier parte de la app un enlace a la ruta principal (en un botón por ejemplo) para acceder al componente
 
-    php artisan make:auth
-
-9- Access your blog:
-
-    www.yourdomain.com/blog
-
-10- Click access and register your user. Change Auth middleware to disable User registration.
-
+	/admin
 
 * You need the Laravel default middleware auth.
 

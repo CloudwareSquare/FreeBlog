@@ -1,6 +1,6 @@
 <?php
 
-namespace Cloudware\Blog;
+namespace CloudwareSquare\Blog;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -37,5 +37,6 @@ class CloudwareSquareBlogServiceProvider extends ServiceProvider
 
         $this->loadViewsFrom(base_path('resources/views/vendor/cloudware-square/blog'), 'blog');
         $this->loadViewsFrom(base_path('resources/views/vendor/cloudware-square/blog/admin'), 'blogAdmin');
+        
     }
 }
