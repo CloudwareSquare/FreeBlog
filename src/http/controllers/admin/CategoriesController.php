@@ -38,7 +38,7 @@ class CategoriesController extends Controller
      */
     public function create()
     {
-        return view('categories.create');
+        return view('blog::admin.categories.create');
     }
 
     /**

@@ -40,7 +40,7 @@ class PostsController extends Controller
                 ->paginate($perPage);
         }
 
-        return view('blogAdmin::posts.index', compact('posts'));
+        return view('blog::admin.posts.index', compact('posts'));
     }
 
     /**
@@ -87,7 +87,7 @@ class PostsController extends Controller
     {
         $post = Post::findOrFail($id);
 
-        return view('blogAdmin::posts.show', compact('post'));
+        return view('blog::admin.posts.show', compact('post'));
     }
 
     /**
@@ -101,7 +101,7 @@ class PostsController extends Controller
     {
         $post = Post::findOrFail($id);
 
-        return view('blogAdmin::posts.edit', compact('post'));
+        return view('blog::admin.posts.edit', compact('post'));
     }
 
     /**

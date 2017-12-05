@@ -35,7 +35,7 @@ class CloudwareSquareBlogServiceProvider extends ServiceProvider
     {
         include __DIR__ . '/http/routes.php';
     
-        $this->loadViewsFrom(__DIR__.'views', 'blog');
+        $this->loadViewsFrom(__DIR__.'/views', 'blog');
         
     }
 }
