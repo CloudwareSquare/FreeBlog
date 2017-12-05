@@ -12,9 +12,9 @@ class PostsController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
-
+        
     }
-
+    
     /**
      * Display a listing of the resource.
      *
@@ -24,7 +24,7 @@ class PostsController extends Controller
     {
         $keyword = $request->get('search');
         $perPage = 25;
-
+        
         if (!empty($keyword)) {
             $posts = Post::where('title', 'LIKE', "%$keyword%")
                 ->orWhere('subtitle', 'LIKE', "%$keyword%")
@@ -39,10 +39,10 @@ class PostsController extends Controller
                 ->orderBy('posts.created_at', 'desc')
                 ->paginate($perPage);
         }
-
+        
         return view('blog::admin.posts.index', compact('posts'));
     }
-
+    
     /**
      * Show the form for creating a new resource.
      *
@@ -50,9 +50,9 @@ class PostsController extends Controller
      */
     public function create()
     {
-        return view('blogAdmin::posts.create');
+        return view('blog::admin.posts.create');
     }
-
+    
     /**
      * Store a newly created resource in storage.
      *
@@ -68,14 +68,14 @@ class PostsController extends Controller
             'post' => 'required'
         ]);
         $requestData = $request->all();
-
+        
         $requestData['user_id'] = Auth::user()->id;
-
+        
         Post::create($requestData);
-
+        
         return redirect('blog/admin/posts')->with('flash_message', 'Post added!');
     }
-
+    
     /**
      * Display the specified resource.
      *
@@ -86,10 +86,10 @@ class PostsController extends Controller
     public function show($id)
     {
         $post = Post::findOrFail($id);
-
+        
         return view('blog::admin.posts.show', compact('post'));
     }
-
+    
     /**
      * Show the form for editing the specified resource.
      *
@@ -100,10 +100,10 @@ class PostsController extends Controller
     public function edit($id)
     {
         $post = Post::findOrFail($id);
-
+        
         return view('blog::admin.posts.edit', compact('post'));
     }
-
+    
     /**
      * Update the specified resource in storage.
      *
@@ -120,13 +120,13 @@ class PostsController extends Controller
             'post' => 'required'
         ]);
         $requestData = $request->all();
-
+        
         $post = Post::findOrFail($id);
         $post->update($requestData);
-
+        
         return redirect('blog/admin/posts')->with('flash_message', 'Post updated!');
     }
-
+    
     /**
      * Remove the specified resource from storage.
      *
@@ -137,7 +137,7 @@ class PostsController extends Controller
     public function destroy($id)
     {
         Post::destroy($id);
-
+        
         return redirect('blog/admin/posts')->with('flash_message', 'Post deleted!');
     }
 }
