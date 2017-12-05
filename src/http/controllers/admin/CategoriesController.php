@@ -28,7 +28,7 @@ class CategoriesController extends Controller
             $categories = Category::paginate($perPage);
         }
 
-        return view('blogAdmin::admin.categories.index', compact('categories'));
+        return view('blogAdmin::categories.index', compact('categories'));
     }
 
     /**
@@ -38,7 +38,7 @@ class CategoriesController extends Controller
      */
     public function create()
     {
-        return view('admin.categories.create');
+        return view('categories.create');
     }
 
     /**
@@ -71,7 +71,7 @@ class CategoriesController extends Controller
     {
         $category = Category::findOrFail($id);
 
-        return view('admin.categories.show', compact('category'));
+        return view('categories.show', compact('category'));
     }
 
     /**
@@ -85,7 +85,7 @@ class CategoriesController extends Controller
     {
         $category = Category::findOrFail($id);
 
-        return view('admin.categories.edit', compact('category'));
+        return view('categories.edit', compact('category'));
     }
 
     /**
