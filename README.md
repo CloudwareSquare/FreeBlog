@@ -38,13 +38,15 @@ and update composer
 
 	php artisan migrate
 
-8- Access your blog:
+8- Make Auth Files
+
+    php artisan make:auth
+
+9- Access your blog:
 
     www.yourdomain.com/blog
 
-
-9- Click access and register your user. Change Auth middleware to disable User registration.
-
+10- Click access and register your user. Change Auth middleware to disable User registration.
 
 
 * You need the Laravel default middleware auth.
