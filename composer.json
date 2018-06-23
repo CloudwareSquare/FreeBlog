@@ -1,26 +1,26 @@
 {
-    "name": "cloudware-square/free-blog",
+    "name": "iot-engineering/free-blog",
     "type": "library",
     "description": "Laravel Blog with adminLTE",
-    "homepage": "http://www.cloudware-square.com",
+    "homepage": "http://www.iot-eng.com",
     "license": "MIT",
     "keywords": ["laravel", "blog", "AdminLTE", "admin", "free", "posts"],
     "authors": [
         {
-            "name": "CloudwareSquare",
-            "email": "info@cloudware-studio.com"
+            "name": "IotEngineering",
+            "email": "info@iot-eng.com"
         }
     ],
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "CloudwareSquare\\Blog\\": "vendor/cloudwareSquare/free-blog/src"
+            "IotEngineering\\Blog\\": "vendor/iot-engineering/free-blog/src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "CloudwareSquare\\Blog\\CloudwareSquareBlogServiceProvider"
+                "IotEngineering\\Blog\\IotEngineeringBlogServiceProvider"
             ]
         }
     },
